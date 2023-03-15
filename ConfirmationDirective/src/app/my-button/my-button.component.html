@@ -1,8 +1,8 @@
 <section>
   <!-- añadimos la directiva appConfirmationPanel
   el problema es que se ejecuta save antes que el listener de la directiva-->
-  <button type="button" (click)="save" appConfirmationPanel>Guardar!!!</button>
+  <button type="button" (click)="save()" appConfirmationPanel>Guardar!!!</button>
 
   <!-- le pasamos la function save como si fuera una variable-->
-  <button type="button" appConfirmationPanel [confirm]="save" >Guardar!!!</button>
+  <button type="button" [confirm]="save" appConfirmationPanel>Guardar!!!</button>
 </section>

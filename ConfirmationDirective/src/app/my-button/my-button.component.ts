@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./my-button.component.css']
 })
 export class MyButtonComponent {
-  save = (valor: string) => {
-    console.log('save');
+
+  //pruebaDePaso: String = "prueba"
+
+  save() {
+    console.log('save')
   }
+
 }

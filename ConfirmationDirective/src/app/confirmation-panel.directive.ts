@@ -7,6 +7,7 @@ export class ConfirmationPanelDirective {
   // para solucionar lo de que si no confirmamos no se ejecute el save
   // input con alias confirm
   @Input('confirm') execFunction!: Function
+ // @Input('valor') value: String | undefined
 
   // se queda escuchando al evento click y le pasamos el evento
   // el evento HostListener ejecuta la función asociada al evento definido dentro del listener
@@ -16,8 +17,11 @@ export class ConfirmationPanelDirective {
   onClick() {
     const confirmed = window.confirm('Are you sure?')
 
+    alert(confirmed);
     if (confirmed) { // ejecutamos la función que nos han pasado
-      this.execFunction
+      alert('ejecutamos la funcion');
+      alert(this.execFunction);
+      this.execFunction()
     }
   }
 
