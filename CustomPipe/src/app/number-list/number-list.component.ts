@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class NumberListComponent {
   number : string = '658956886'
+  pi: number = 3.14159265358979323846
+  cadena = "Angular"
+  array = [1,2,3]
+  price = 23.2
+  today: number = Date.now()
 }
