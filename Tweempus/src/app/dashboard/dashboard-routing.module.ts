@@ -9,7 +9,7 @@ const dashboardRoutes: Routes = [
 
 @NgModule({
   imports: [
-      RouterModule.forChild(dashboardRoutes)
+    RouterModule.forChild(dashboardRoutes)
   ]
 })
 
