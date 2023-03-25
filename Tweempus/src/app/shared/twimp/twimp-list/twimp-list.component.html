@@ -1,0 +1,3 @@
+<section *ngFor="let twimp of twimps; trackBy: trackByTwips" class="twimp_list">
+  <tweempus-twimp-card [twimp]="twimp" (eventoCard)="listenerFavorite($event)"></tweempus-twimp-card>
+</section>

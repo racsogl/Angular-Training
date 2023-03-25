@@ -1,0 +1,20 @@
+<section class="twimp">
+
+	<div class="twimp_header">
+		<img class="twimp_header_img" src="assets/images/google-icon.png" alt="Imagen de un twimp">
+		<a class="twimp_header_name" href="www.therewego.com" target="_b">by {{twimp?.author?.fullName}}</a>
+		<div class="twimp_header_date">Published on {{twimp?.timestamp}}</div>
+	</div>
+
+	<div class="twimp_content">
+		{{twimp?.content}}
+	</div>
+
+	<hr class="twimp_line">
+
+	<div class="twimp_fav">
+		<a class="fav_icon fav_icon-selected" (click)="changeFavorites()" >&#10084;</a>
+    {{twimp?.favorite}}
+	</div>
+
+</section>
