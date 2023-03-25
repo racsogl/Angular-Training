@@ -1,0 +1,8 @@
+<h1>
+  Contador {{appValor}}
+</h1>
+<!-- a la variable valorContador del componente contador le pasamos el valor de appValor -->
+<!-- eventContador nos emite un valor y lo capturamos en el listener -->
+<app-contador [valorContador]="appValor" (eventContador)="eventListener($event)"></app-contador>
+
+<app-contador [valorContador]="appValor" (eventContador)="eventListener($event)"></app-contador>

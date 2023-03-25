@@ -1,0 +1,11 @@
+<section class="section_contador">
+
+  <button (click)="decrementar()">-</button>
+
+  <input #id type="text" [value]="valorContador" (change)="updateValorContador2($event)"/>
+
+  <button (click)="incrementar()">+</button>
+
+  <button (click)="resetContador()">R</button>
+
+</section>
