@@ -20,12 +20,13 @@ export class AuthorService {
   constructor(private httpClient: HttpClient) { }
 
   getAuthor(id: string): Observable<Author> {
-    let author: Author | null = null;
+    // let author: Author | null = null;
 
     // pipe -> gestiona las llamadas rjx
     return this.httpClient.get<Author>(this.url + '/' + id).pipe(
       map(dbAuthor =>  {
-        author = new Author(dbAuthor.id);
+        const author = new Author(dbAuthor.id);
+        // author = new Author(dbAuthor.id);
         author.fullName = dbAuthor.fullName;
         author.image = dbAuthor.image
         author.url = 'http://localhost:4200/author/' + dbAuthor.id
