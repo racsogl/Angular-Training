@@ -3,5 +3,5 @@
 <!--</section>-->
 
 <section *ngFor="let twimp of twimps" class="twimp_list">
-  <tweempus-twimp-card [twimp]="twimp"></tweempus-twimp-card>
+  <tweempus-twimp-card [twimp]="twimp" (eventoCard)=" listenerFavorite($event)"></tweempus-twimp-card>
 </section>
